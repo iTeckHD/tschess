@@ -1,0 +1,42 @@
+{
+  "name": "tschess",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "lerna run build",
+    "bootstrap": "lerna bootstrap --hoist",
+    "test": "lerna run test",
+    "lint": "lerna run --parallel lint",
+    "format": "lerna run --parallel format"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/iTeckHD/tschess.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/iTeckHD/tschess/issues"
+  },
+  "homepage": "https://github.com/iTeckHD/tschess#readme",
+  "devDependencies": {
+    "lerna": "^3.16.4",
+    "lint-staged": "^8.2.1",
+    "prettier": "^1.18.2",
+    "tslint": "^5.18.0",
+    "tslint-config-prettier": "^1.18.0",
+    "typescript": "^3.5.3"
+  },
+  "lint-staged": {
+    "*.{ts,tsx}": [
+      "tslint --fix",
+      "git add"
+    ],
+    "*.{js,json,css,md,ts,tsx}": [
+      "prettier --write",
+      "git add"
+    ]
+  }
+}
