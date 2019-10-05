@@ -10,7 +10,13 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
+  "dependencies": {
+    "react": "^16.9.0",
+    "react-dom": "^16.10.2"
+  },
   "devDependencies": {
+    "@types/react": "^16.8.24",
+    "@types/react-dom": "^16.9.1",
     "prettier": "^1.18.2",
     "ts-loader": "^6.0.4",
     "tslint": "^5.18.0",
