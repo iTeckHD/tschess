@@ -1,10 +1,10 @@
 {
-  "name": "dto",
+  "name": "@tschess/interfaces",
   "version": "1.0.0",
   "description": "",
   "main": "dist/index.js",
   "scripts": {
-    "build": "rm -rf ./dist && tsc",
+    "build": "rm -rf dist && tsc",
     "lint": "tslint -c tslint.json 'src/**/*.ts'",
     "lint:fix": "tslint -c tslint.json --fix 'src/**/*.ts'",
     "format": "prettier --write \"src/**/*.{js,ts,jsx,tsx,json,html,md,gql,graphql,yml,css,less,scss}\""
@@ -21,6 +21,6 @@
     "prettier": "^1.18.2",
     "tslint": "^5.18.0",
     "tslint-config-prettier": "^1.18.0",
-    "typescript": "^3.5.3"
+    "typescript": "^3.7.2"
   }
 }
